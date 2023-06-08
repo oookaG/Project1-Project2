@@ -33,12 +33,12 @@ for i=3:T-2
     A(i,i+1) = -4*lam; A(i,i+2) = lam;
 end
 
-tauGDP = A\id;
-tauPCE = A\jp;
+idGDP = A\id;
+jpPCE = A\jp;
 
 % detrended GDP
-idtilde = id-tauGDP;
-jptilde = jp-tauPCE;
+idtilde = id-idGDP;
+jptilde = jp-jpPCE;
 
 % plot detrended GDP
 dates = 2003:1/4:2022.1/4; zerovec = zeros(size(id));
