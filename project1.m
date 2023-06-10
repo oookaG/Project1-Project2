@@ -53,9 +53,9 @@ ysd_id = std(idtilde)*100;
 ysd_jp = std(jptilde)*100;
 corryc = corrcoef(idtilde(1:T),jptilde(1:T)); corryc = corryc(1,2);
 
-disp(['Percent standard deviation of detrended log real GDP for japan: ', num2str(ysd_id),'.']); disp(' ')
+disp(['Percent standard deviation of detrended log real GDP for Japan: ', num2str(ysd_id),'.']); disp(' ')
 disp(['Percent standard deviation of detrended log real GDP for Indonesia: ', num2str(ysd_jp),'.']); disp(' ')
-disp(['Contemporaneous correlation between detrended log real GDP and PCE: ', num2str(corryc),'.']);
+disp(['Contemporaneous correlation between detrended log real GDP for Japan and detrended log real GDP for Indonesia: ', num2str(corryc),'.']);
 
 
 
