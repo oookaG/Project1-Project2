@@ -1,1 +1,1 @@
-# keio → Project1 & project2
+# Project1 & project2
